@@ -1,0 +1,92 @@
+body {
+   background-color: rgb(228, 222, 31);
+
+}
+
+header {
+    color: green;
+    text-align: center;
+    font-size: 58px;
+
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+h2 {
+
+    color: green;
+}
+
+h3 {
+    color: green;
+    text-align: left;
+
+}
+
+h4 {
+    color: green;
+
+}
+
+#mainCard {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(1, 125px);
+    grid-template-rows: repeat(1, 125px);
+
+
+}
+
+#mainCard > div {
+    border: solid;
+
+}
+
+#choices {
+    /* border that pops */
+    /* ceneter grid */
+    margin: auto;
+    /* grid */
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(3, 125px);
+    grid-template-rows: repeat(2, 125px);
+    
+}
+
+#choices > div {
+    border: solid;
+
+}
+
+#timer {
+    /* grid */
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(1, 75px);
+    grid-template-rows: repeat(1, 75px);
+
+}
+
+#timer > div {
+    border: solid;
+}
+
+button {
+    margin: 0;
+    font-size: 3vmin;
+    padding: 2pt;
+    border-radius: 3vmin;
+    border-radius: 0.3vmin solid black;
+}
+
+button:hover {
+    background-color: red;
+    color: green;
+
+}

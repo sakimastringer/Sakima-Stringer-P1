@@ -1,0 +1,65 @@
+P1: Concentration Planning
+
+
+Day 1 Tuesday: Initial Step
+	Build Planning Doc
+Build Skeleton
+GitHub create repo
+Create pseudocode.md file
+Update Github with milestones
+Create HTML/CSS/JS files & boiler plate
+Scratch.txt file
+
+	Build game board
+Create basic CSS needed for game board (save pretty for post)
+Build dynamic elements (headings/labels)
+Build interactive elements
+Build HTML needed
+	
+Research
+Briefly research unfamiliar needed items
+
+Day 2 Wednesday: Build Game Part 1
+Initializing State
+Declare the application-wide State Variables
+Cache DOM for elements
+Basic Functions
+Render
+	
+Render Game Sate
+Set up all Render Functions
+Controls 
+Messages 
+Board 	
+
+Day 3 Thursday: Build Game Part 2
+	Adding Event Listeners
+Create handleDrop(), features init(), ensure functionality 
+Connect clickHandler to markers/parent containers
+handleDrop() features init() ect
+Play Again event listener
+Event Delegations
+
+	Final Debug/Test ALL
+
+
+
+Day 4 Friday: Proof- Read Game
+	Finalize Prep
+Remove all non-essential code and add to stash.txt
+Ensure all notes are commented out
+Add any cited works/references
+
+	Add Extra CSS
+Once Project is finalized it’s now ok to embellish on the CSS
+Add Game Logic (if feeling hungry for more and have the time)
+Add my own musical instrumentals without breaking code(save backup)
+
+Day 5 Saturday: Public Speaking Take 1
+Rehearsal of Project Delivery
+Be prepared to break-down every line of code
+Practice timed presentation delivery
+
+
+Day 6 Sunday: Ferris Bueller 
+Hopefully this day isn’t needed but it is there as a back-up!
