@@ -1,6 +1,6 @@
 // constants //
 // Player's Choices //
-const COLORS = {
+const tileColors = {
     '0' : 'black',
     '1' : 'purple',
     '2' : 'blue',
@@ -12,35 +12,74 @@ const COLORS = {
 
 // state varibles //
 
-let choices = {
-}
+let choices 
 
-let win = {
-}
+let match 
 
-let lose =  {
-}
+let win 
+
+let main = 3 
 
 
 // cached elements //
 
-const messageEl = document.querySelectorAll('h1')
-const playAgainButton = document.querySelector('#button')
-const choiceEl = document.querySelectorAll('#choices')
+// selecting h1 element //
+const messageEl = document.querySelector('h1')
+// selecting Button element //
+const playAgainButton = document.querySelector('button')
+// selecting square element //
+const choiceEls = document.querySelectorAll('.square')
+console.log(choiceEls)
 
 
 // event listeners //
+// Attached method using variable name //
+playAgainButton.addEventListener('click', resetChoices)
+
+
 
 // functions //
-Init()
+init()
 function init() {
-    choice = [
-        [0, 0, 0], //<!-- Row 1 -->
-        [0, 0, 0], //<!-- Row 2 -->
+    choices = [
+        0, 1, 2, 3, 4, 5, //<!-- Row 1 -->
+    
     ]
     win = null
-    render ()
+    render()
 }
+
+function render() {
+    renderChoices()
+    // renderMessage()
+
+} 
+// console.log(choices)
+
+function renderChoices() {
+    choices.forEach(function(cellValue, index) {
+ 
+            const cellEl = document.getElementById(index)
+
+            cellEl.style.backgroundColor = tileColors[cellValue]
+    }) 
+}
+
+// Declaring function //
+function resetChoices() {
+    choices = []
+    console.log('test')
+// calling the render
+    render()  
+}
+// console.log(choices)
+// calling the function //
+// resetChoices()
+// console.log(choices)
+
+
+
+
 
 
 
