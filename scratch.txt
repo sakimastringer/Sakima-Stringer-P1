@@ -1,0 +1,6 @@
+
+Code references
+https://www.programiz.com/javascript/examples/get-random-item
+
+https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer
+
