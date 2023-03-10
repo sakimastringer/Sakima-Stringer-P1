@@ -18,6 +18,14 @@ let match
 
 let win
 
+let timer
+
+let delay
+
+let counterState
+
+let mainColor
+
 
 // let main = getRandomItem //
 
@@ -31,16 +39,22 @@ const playAgainButton = document.querySelector('button')
 // selecting square element //
 const choiceEls = document.querySelectorAll('.square')
 // selecting Main Image //
-const mainImageEl = document.getElementById('.mainImage')
-// selecting timer //
-const timerEl = document.getElementById('timer')
-console.log(choiceEls)
+const mainImageEl = document.getElementById('mainImage')
+// selecting Timer Display//
+const displayEl = document.querySelector('#gameClock')
+// selecting SubMessage //
+const subEl = document.querySelector("#submessage")
+// console.log(choiceEls)
 
 
 // event listeners //
 // Attached method using variable name //
-playAgainButton.addEventListener('click', resetChoices)
- console.log()
+// playAgainButton.addEventListener('click', resetChoices)
+//  console.log()
+document.getElementById("choices").addEventListener('click', handleClick)
+
+
+
 
 
 // functions //
@@ -50,7 +64,12 @@ function init() {
         0, 1, 2, 3, 4, 5, //<!-- Row 1 -->
 
     ]
+    delay = 1000;
+    // timer =  setInterval(cb, delay)
     win = null
+    main = getRandomItem(choices) 
+    match = 0
+
     render()
 }
 
@@ -68,32 +87,60 @@ function renderChoices() {
 
         cellEl.style.backgroundColor = tileColors[cellValue]
     })
-}
+    mainImageEl.style.backgroundColor = tileColors[main]
+    console.log(main)
+    setTimeout(hideChoices, 2000)
 
+}
 
 
 // Declaring function //
-function resetChoices() {
-    choices = []
+function hideChoices() {
     console.log('test')
-    // calling the render //
-    render()
+    choiceEls.forEach(function (cellEl, index) {
+    
+        cellEl.style.backgroundColor = "goldenrod"
+    })
+
 }
 
-var count = 9, shotClock= setInterval(function() {
-    ("counter")(count-1);
-    if(count == 0) clearInterval(shotClock);
+function handleClick(evt) {
+    console.log(evt.target.id, main)
+    // const currentSquare = evt.target.id
+    // // change background color to match current sqaure color //
+    if (evt.target.id == 'choices') {
+        return
+    }
+    evt.target.style.backgroundColor = tileColors[evt.target.id]
+    // // if statement if id matches the main variable //
+    if (evt.target.id == main) {
+        console.log(match)
+        match++ 
+        shuffleChoices()
+        nextTurn()
+    }  else { 
+        // setTimeout(hideChoices, 2000)
+  
+    }
+    // // if it is a match game over //
+    //  if (match = then(gameOver)) {
+    // }
+    // // else hides current color after select delay //
 
-}, 1000);
+}
 
-// function matchImages() {
-//     // Match options are from the string referenced above //
-//     const options = "tileColors".length
-//     if (options === 2)
-//     // if(mainImage === picked Image)matched
-//     // Everything else other than above line in not a match //   
-//     else {unmatched()}
-// }
+function nextTurn(){
+    
+    main = getRandomItem(choices)
+    console.log(choices, main)
+    render()
+   
+}
+
+function shuffleChoices(){
+    choices = choices.sort((a, b) => 0.5 - Math.random())
+    console.log(choices)
+}
 
 function getRandomItem(str) {
     const randomIdx = Math.floor(Math.random() * str.length)
@@ -102,10 +149,19 @@ function getRandomItem(str) {
     return item
 }
 
-let str = choices
 
-const result = getRandomItem(str)
-console.log(result)
+
+// Invoking callback function //
+function cb() {
+    // Defining counter direction //
+    counterState--;
+    // Invoking subMessage //
+    // upDateSubMessage()
+    // Invoking stopTimer
+    stopTimer()
+    // Rendering everything above //
+    render()
+}
 
 
 
