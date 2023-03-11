@@ -53,10 +53,6 @@ const subEl = document.querySelector("#submessage")
 //  console.log()
 document.getElementById("choices").addEventListener('click', handleClick)
 
-
-
-
-
 // functions //
 init()
 function init() {
@@ -83,20 +79,20 @@ function render() {
 function renderChoices() {
     choices.forEach(function (cellValue, index) {
 
-        const cellEl = document.getElementById(index)
-
+        const cellEl = choiceEls[index]
+        cellEl.setAttribute('id', cellValue)
         cellEl.style.backgroundColor = tileColors[cellValue]
     })
     mainImageEl.style.backgroundColor = tileColors[main]
     console.log(main)
     setTimeout(hideChoices, 2000)
-
+    // gameOver()
 }
 
 
 // Declaring function //
 function hideChoices() {
-    console.log('test')
+    // console.log('test')
     choiceEls.forEach(function (cellEl, index) {
     
         cellEl.style.backgroundColor = "goldenrod"
@@ -119,13 +115,12 @@ function handleClick(evt) {
         shuffleChoices()
         nextTurn()
     }  else { 
-        // setTimeout(hideChoices, 2000)
+        setTimeout(hideChoices, 2000)
+       
   
     }
     // // if it is a match game over //
-    //  if (match = then(gameOver)) {
-    // }
-    // // else hides current color after select delay //
+
 
 }
 
@@ -137,31 +132,44 @@ function nextTurn(){
    
 }
 
+function gameOver(){
+    console.log('match', match)
+    if(match < -5){
+        alert('game over - you lose')
+    } else if (match >=10 ){
+        alert('game over - you win')
+    }
+    setTimeout(init, 2000)
+   
+}
+
 function shuffleChoices(){
-    choices = choices.sort((a, b) => 0.5 - Math.random())
-    console.log(choices)
+    console.log("shuffle", choices)
+    newData = [...choices].sort((a, b) => 0.5 - Math.random())
+    choices = [...newData]
+    console.log('choices after sort', choices)
 }
 
 function getRandomItem(str) {
     const randomIdx = Math.floor(Math.random() * str.length)
     const item = str[randomIdx]
-
+    
     return item
 }
 
 
 
-// Invoking callback function //
-function cb() {
-    // Defining counter direction //
-    counterState--;
-    // Invoking subMessage //
-    // upDateSubMessage()
-    // Invoking stopTimer
-    stopTimer()
-    // Rendering everything above //
-    render()
-}
+// // Invoking callback function //
+// function cb() {
+//     // Defining counter direction //
+//     counterState--;
+//     // Invoking subMessage //
+//     // upDateSubMessage()
+//     // Invoking stopTimer
+//     stopTimer()
+//     // Rendering everything above //
+//     render()
+// }
 
 
 
