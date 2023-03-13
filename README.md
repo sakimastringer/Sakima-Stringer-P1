@@ -2,54 +2,41 @@ Game chosen: Concentration (Memory Game)
 
 Ths game will require HTML, CSS and JS files to create.
 
-Name/Title: Concetration
-
 Components: 
-
-Player must pick the correct image of the 6 imgaes that matches the main image. 
-
-
-Main Image: This is the image the player will have to find
-
-6 Images: One of these images the player will have to match to 
+1) Main Image: This is the image the player will have to find
+2) 6 Images: One of these images the player will have to match to 
 the main image.
 
+Directions:
 These are 6 boxes that will show 
 images. Then they will be flipped 
 over to a common image. 1 of the 6 
 images will match the main image. The 
 player will have to pick the image that 
-matches the main image before the time expires. 
-The player can guess until they run out of time. If
-the player runs out of time, GAME OVER! Player will start on 
-Easy, then next level will be Medium and finally the last level will 
-be Hard. Each level the player matches the correct image to the main image 
-and if this is done successfully on all 3 levels, then the player WINS!
+matches the main image. If the player picks
+the incorrect image, they will have to try again.
+After the player picks the correct image the will go 
+on to ther next level. There is a small suprise waiting
+for the player once they beat the levels a few times. But
+they will have to figure it out...
+
+MVP: player beating the initial level.
 
 
+Game Link:
+https://sakimastringer.github.io/Sakima-Stringer-P1/
 
 
-Re-submitting P1 Planning & Presentation Requirements
+Theme music is provided on the bottem of page.
+Track 1 was created by Mystic Voyage Music Group.
+Track 2 was pulled from YouTube for promotional value, not intended for sasle.
 
-Game chosen: Concentration (Memory Game)
 
-Ths game will require HTML, CSS and JS files to create.
+Cited Sources:
+https://www.w3schools.com/tags/att_audio_controls.asp
+https://www.programiz.com/javascript/examples/get-random-item
+https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer
+https://stackoverflow.com/questions/42696884/how-to-do-a-match-and-replace-on-javascript-object
+https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj#:~:text=The%20first%20and%20simplest%20way,)%20%3D%3E%200.5%20%2D%20Math.
 
-Name/Title: Concetration
 
-Components:
-
-Timer: Player must pick the correct image of the 6 imgaes that
-matches the the main image before the time elapses.
-This timer will have 3 settings:
-Hard - 3 seconds - extra if the time is there
-Medium - 6 seconds - extra if the time is there
-Easy - 9 seconds - MVP
-Main Image: This is the image the the player will have to find
-
-6 Images: One of these images the player will have to match to
-the main image.
-
-The will be a main picture on the top. There are also 6 boxes below the main image. One of the 6 images will match the main image. The bottom 6 images will be flipped over to a common image. 1 of the 6 images will match the main image. The player will have to pick the image that matches the main image before the time expires. The player can guess until they run out of time. If the player runs out of time, GAME OVER! The player will have 9 seconds to come up with the correct answer and if the player comes up with the correct, then the player WINS!
-
-I will add medium and hard levels if the time is there.

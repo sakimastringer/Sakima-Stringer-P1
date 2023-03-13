@@ -1,4 +1,4 @@
-// constants //
+// Constants //
 // Player's Choices //
 const tileColors = {
     '0': 'black',
@@ -10,15 +10,13 @@ const tileColors = {
 }
 
 
-// state varibles //
+// State varibles //
 
 let choices
 
 let match
 
 let win
-
-let timer
 
 let delay
 
@@ -33,54 +31,45 @@ let mainColor
 // cached elements //'
 
 // selecting h1 element //
-const messageEl = document.querySelector('h1')
+const messageEl = document.querySelector('h1');
 // selecting Button element //
-const playAgainButton = document.querySelector('button')
+const playAgainButton = document.querySelector('button');
 // selecting square element //
-const choiceEls = document.querySelectorAll('.square')
+const choiceEls = document.querySelectorAll('.square');
 // selecting Main Image //
-const mainImageEl = document.getElementById('mainImage')
-// selecting Timer Display//
-const displayEl = document.querySelector('#gameClock')
-// selecting SubMessage //
-const subEl = document.querySelector("#submessage")
+const mainImageEl = document.getElementById('mainImage');
 
 
 
-
-// event listeners //
-
-// Attached method using variable name //
-// playAgainButton.addEventListener('click', resetChoices)
-//  console.log()
+// Event listeners //
+// EventListener for click squares //
 document.getElementById("choices").addEventListener('click', handleClick)
 
-// functions //
+
+// Functions //
+
+// Initializing game play //
 init()
 function init() {
     choices = [
-        0, 1, 2, 3, 4, 5, //<!-- Row 1 -->
-
+        0, 1, 2, 3, 4, 5, //<!-- choices array -->
     ]
     delay = 1000;
-    // timer =  setInterval(cb, delay)
     win = null
     main = getRandomItem(choices) 
     match = 0
-
+    // render function //
     render()
 }
 
+// Renderin g Functions //
 function render() {
     renderChoices()
-    // renderMessage()
-
 }
-// console.log(choices)
 
+// Function for rendering choices //
 function renderChoices() {
     choices.forEach(function (cellValue, index) {
-
         const cellEl = choiceEls[index]
         cellEl.setAttribute('id', cellValue)
         cellEl.style.backgroundColor = tileColors[cellValue]
@@ -88,28 +77,26 @@ function renderChoices() {
     mainImageEl.style.backgroundColor = tileColors[main]
     console.log(main)
     setTimeout(hideChoices, 2000)
-    // gameOver()
 }
 
-
-// Declaring function //
+// Declaring function for hinding choices//
 function hideChoices() {
-    // console.log('test')
+    // forEach //
     choiceEls.forEach(function (cellEl, index) {
-    
+        // Background color for 6 choices //
         cellEl.style.backgroundColor = "goldenrod"
     })
-
 }
 
-
+// Function for hadleClick //
 function handleClick(evt) {
     console.log(evt.target.id, main)
-    // const currentSquare = evt.target.id
+    const currentSquare = evt.target.id
     // // change background color to match current sqaure color //
     if (evt.target.id == 'choices') {
         return
     }
+    // background colors for squares //
     evt.target.style.backgroundColor = tileColors[evt.target.id]
     // // if statement if id matches the main variable //
     if (evt.target.id == main) {
@@ -118,34 +105,19 @@ function handleClick(evt) {
         shuffleChoices()
         nextTurn()
     }  else { 
-        setTimeout(hideChoices, 2000)
-       
-  
+        setTimeout(hideChoices, 2000)   
     }
-    // // if it is a match game over //
-
 }
 
-
+// Render function for next turn //
 function nextTurn(){
     
     main = getRandomItem(choices)
     console.log(choices, main)
-    render()
-   
+    render()  
 }
 
-function gameOver(){
-    console.log('match', match)
-    if(match < -5){
-        alert('game over - you lose')
-    } else if (match >=10 ){
-        alert('game over - you win')
-    }
-    setTimeout(init, 2000)
-   
-}
-
+// Funtion for picking choices and proceeding //
 function shuffleChoices(){
     console.log("shuffle", choices)
     newData = [...choices].sort((a, b) => 0.5 - Math.random())
@@ -153,6 +125,7 @@ function shuffleChoices(){
     console.log('choices after sort', choices)
 }
 
+// Function for ramdomizing selections //
 function getRandomItem(str) {
     const randomIdx = Math.floor(Math.random() * str.length)
     const item = str[randomIdx]

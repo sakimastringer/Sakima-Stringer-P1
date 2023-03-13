@@ -1,43 +1,58 @@
 body {
+    /* Main background gradient */
     background-image: linear-gradient(to bottom, #770030, #9b2132, #bc4130, #d76428, #eb891b, #f1a016, #f5b716, #f6ce1f, #f4da30, #f1e540, #eef04f, #ebfb5f);
+    /* Centered alignment */
     align-items: center;
 }
 
 
 header {
+    /* Text color */
     color: #ebfb5f;
+    /* Text align */
     text-align: center;
+    /* Font size */
     font-size: 58px;
 
 }
 
 h1 {
+    /* Text color */
     color: #eef04f;
+    /* Text align */
     text-align: center;
+    /* Font size */
     font-size: 28px;
 
 }
 
 h2 {
-
+    /* Text color */
     color: #f4da30;
+    /* Text align */
     text-align: center;
 }
 
 h3 {
+    /* Text color */
     color: #f4da30;
+    /* Text align */
     text-align: center;
 
 }
 
 h4 {
+    /* Text color */
     color: #bc4130;
+    /* Text align */
     text-align: center;
+    /* Font size */
     font-size: 18px;
 
 }
 
 h5 {
+    /* Font size */
     font-size: medium;
     color: #bc4130; 
     margin-bottom: 0px;
@@ -45,9 +60,11 @@ h5 {
 }
 
 h6 {
+    /* Font size */
     font-size: medium;
     color: #bc4130; 
     margin-bottom: 0px;
+    /* Text align */
     text-align: center;
 }
 
@@ -55,6 +72,7 @@ h6 {
     display: flex;
     justify-content: center;
     display: grid;
+    /* Grid gap size */
     grid-gap: 8px;
     grid-template-columns: repeat(1, 125px);
     grid-template-rows: repeat(1, 125px);
@@ -77,6 +95,7 @@ h6 {
     justify-content: center;
     /* grid */
     display: grid;
+    /* Grid gap size */
     grid-gap: 8px;
     grid-template-columns: repeat(3, 125px);
     grid-template-rows: repeat(2, 125px);
@@ -91,24 +110,15 @@ h6 {
 
 }
 
-#timer {
-    display: flex;
-    justify-content: center;
-    /* grid */
-    display: grid;
-    grid-gap: 8px;
-    grid-template-columns: repeat(1, 75px);
-    grid-template-rows: repeat(1, 75px);
-
-}
-
 #timer > div {
     border: solid;
     border-color: white;
 }
 
-p {
+p { 
+    /* Text color */
     color: #770030;
+    /* Font size */
     font-size: 17px;
     font-weight: 550;
     text-align: center; 
@@ -116,9 +126,10 @@ p {
  
 audio {
     margin: 0;
+    /* Font size */
     font-size: 3vmin;
     padding: 2pt;
-    
+    /* Text color */
     color: #770030;
     border-radius: 3vmin;
     border-radius: 0.3vmin solid black;
@@ -153,6 +164,7 @@ audio:hover {
         justify-content: center;
         text-align: center;
         color: transparent;
+        /* Font size */
         font-size: .3px;
     }
     
@@ -163,6 +175,7 @@ audio:hover {
         width: 1300px;
         height: 250px;
         font: bold 57px/1 ultra;
+        /* Text color */
         color: #eb891b;   
         
         

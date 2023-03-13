@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/main.js"defer></script>
+    <!-- References the JS file -->
+    <script src="./js/main.js" defer></script>
+    <!-- References the CSS file -->
     <link rel="stylesheet" href="style.css">
     <!-- Tab Title -->
     <title>Concentration</title>
@@ -15,17 +17,17 @@
 <body>
     <!-- Creators -->
     <h5>Powered by<br>BrokeBrothas.com &</h5>
-     
+
     <!-- Concentration Warp -->
     <div class="warp" aria-labelledby="warp-label">
         <!-- Brand Logo -->
-        <img src="Mysticgold.png"class="BrandLogo">
+        <img src="Mysticgold.png" class="BrandLogo">
 
-       <!-- Leters Warp  Section-->
+        <!-- Leters Warp  Section-->
         <span id="warp-label" class="warp__placeholder">
-        
+
         </span>
-        <!-- Individual Leters Warp -->
+        <!-- Individualized Leters Warp -->
         <span aria-role="presentation">
             <span class="warp__0">
                 C
@@ -67,13 +69,13 @@
                 n
             </span>
             <span class="warp__13">
-                 
+
             </span>
         </span>
     </div>
-    
 
-    <!-- Directions -->
+
+    <!-- User Directions -->
     <h1>Click the correct Player's Choice color that matches the Main Image color to win!</h1>
 
     <!-- #mainCard section -->
@@ -103,25 +105,29 @@
         <div class="square" id="5"></div>
     </section>
 
-<!-- No End Section -->
-<div id="noEnd">
-    <!-- Above gif text -->
-    <h4>This is a game that doesn't end</h4>
-    <!-- Lamb Chops gif -->
-    <img src="game end.gif"class="BrandLogo">
-    <!-- Below gif text -->
-    <h4>Yes it goes on and on my friend!</h4>
-</div>
-<h6>Theme Music</h6>
-<div class="player">
-<audio controls>
-    <source src="Clouds At Last.wav" type="audio/wav">
-</audio controls>
+    <!-- Div of Gif/Text Section -->
+    <div id="noEnd">
+        <!-- Above gif text -->
+        <h4>This is a game that doesn't end</h4>
+        <!-- Lamb Chops gif -->
+        <img src="game end.gif" class="BrandLogo">
+        <!-- Below gif text -->
+        <h4>Yes it goes on and on my friend!</h4>
+    </div>
 
-<audio controls>
-<source src="lambchops.mp3" type="audio/mp3">
-</audio controls>
-</div>
+    <!-- Music Control Section -->
+    <h6>Theme Music</h6>
+    <div class="player">
+        <audio controls>
+            <!-- Background Track 1 -->
+            <source src="Clouds At Last.wav" type="audio/wav">
+        </audio controls>
+
+        <audio controls>
+            <!-- Background Track 2 -->
+            <source src="lambchops.mp3" type="audio/mp3">
+        </audio controls>
+    </div>
 </body>
 
 </html>

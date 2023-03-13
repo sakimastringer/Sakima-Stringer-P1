@@ -8,8 +8,6 @@ https://stackoverflow.com/questions/42696884/how-to-do-a-match-and-replace-on-ja
 
 https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj#:~:text=The%20first%20and%20simplest%20way,)%20%3D%3E%200.5%20%2D%20Math.
 
-https://www.youtube.com/watch?v=d5cHhIv35HI
-
 https://www.w3schools.com/tags/att_audio_controls.asp
 
 
@@ -56,4 +54,33 @@ Concentration
 //     stopTimer()
 //     // Rendering everything above //
 //     render()
+// }
+
+#timer {
+    display: flex;
+    justify-content: center;
+    /* grid */
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(1, 75px);
+    grid-template-rows: repeat(1, 75px);
+
+}
+
+// selecting Timer Display//
+const displayEl = document.querySelector('#gameClock')
+
+// selecting SubMessage //
+const subEl = document.querySelector("#submessage")
+
+let timer
+
+// function gameOver(){
+//     console.log('match', match)
+//     if(match < -5){
+//         alert('game over - you lose')
+//     } else if (match >=10 ){
+//         alert('game over - you win')
+//     }
+//     setTimeout(init, 2000)
 // }
