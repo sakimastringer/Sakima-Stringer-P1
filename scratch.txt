@@ -4,3 +4,50 @@ https://www.programiz.com/javascript/examples/get-random-item
 
 https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer
 
+https://stackoverflow.com/questions/42696884/how-to-do-a-match-and-replace-on-javascript-object
+
+https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj#:~:text=The%20first%20and%20simplest%20way,)%20%3D%3E%200.5%20%2D%20Math.
+
+// var count = 9, shotClock= setInterval(function() {
+//     ("counter")(count-1);
+//     if(count == 0) clearInterval(shotClock);
+
+// }, 1000);
+
+// function matchImages() {
+//     // Match options are from the string referenced above //
+//     const options = "tileColors".length
+//     if (options === 2)
+//     // if(mainImage === picked Image)matched
+//     // Everything else other than above line in not a match //   
+//     else {unmatched()}
+// }
+ <!-- Button Play Again -->
+    <button>Play Again</button>
+
+
+Concentration
+
+ <!-- #timer section    -->
+     <!-- Shot Clock Title -->
+     
+     <h4>Timer</h4>
+     <h5></h5>
+    <section id="timer">
+        <!-- Shot Clock -->
+        <div class="rhombus" id="g"></div>
+        <p id="gameClock">Time Left</p>
+        <!-- <p id="subMessage">Time is up</p> -->
+    </section>
+
+    // // Invoking callback function //
+// function cb() {
+//     // Defining counter direction //
+//     counterState--;
+//     // Invoking subMessage //
+//     // upDateSubMessage()
+//     // Invoking stopTimer
+//     stopTimer()
+//     // Rendering everything above //
+//     render()
+// }

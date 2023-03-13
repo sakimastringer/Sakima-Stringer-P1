@@ -6,14 +6,10 @@ Name/Title: Concetration
 
 Components: 
 
-Timer: Player must pick the correct image of the 6 imgaes that 
-matches the the main image before the time elapses.
-This timer will have 3 settings: 
-Hard - 3 seconds
-Medium - 6 seconds
-Easy - 9 seconds
+Player must pick the correct image of the 6 imgaes that matches the main image. 
 
-Main Image: This is the image the the player will have to find
+
+Main Image: This is the image the player will have to find
 
 6 Images: One of these images the player will have to match to 
 the main image.

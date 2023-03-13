@@ -1,19 +1,18 @@
 body {
-   background-color: rgb(228, 222, 31);
-   align-items: center;
-   
-
+    background-image: linear-gradient(to bottom, #770030, #9b2132, #bc4130, #d76428, #eb891b, #f1a016, #f5b716, #f6ce1f, #f4da30, #f1e540, #eef04f, #ebfb5f);
+    align-items: center;
 }
 
+
 header {
-    color: green;
+    color: #ebfb5f;
     text-align: center;
     font-size: 58px;
 
 }
 
 h1 {
-    color: green;
+    color: #eef04f;
     text-align: center;
     font-size: 28px;
 
@@ -21,20 +20,27 @@ h1 {
 
 h2 {
 
-    color: green;
+    color: #f4da30;
     text-align: center;
 }
 
 h3 {
-    color: green;
+    color: #f4da30;
     text-align: center;
 
 }
 
 h4 {
-    color: green;
+    color: #bc4130;
     text-align: center;
+    font-size: 18px;
 
+}
+
+h5 {
+    font-size: medium;
+    color: #eb891b; 
+    margin-bottom: 0px;
 }
 
 #mainCard {
@@ -50,7 +56,8 @@ h4 {
 
 #mainCard > div {
     border: solid;
-    /* background-color: red; */
+    border-color: white;
+    
     
 
 }
@@ -70,6 +77,9 @@ h4 {
 
 #choices > div {
     border: solid;
+    border-color: white;
+    
+    
 
 }
 
@@ -86,6 +96,14 @@ h4 {
 
 #timer > div {
     border: solid;
+    border-color: white;
+}
+
+p {
+    color: #770030;
+    font-size: 17px;
+    font-weight: 550;
+    text-align: center; 
 }
 
 button {
@@ -93,13 +111,121 @@ button {
     font-size: 3vmin;
     padding: 2pt;
     
-    color: red;
+    color: #770030;
     border-radius: 3vmin;
     border-radius: 0.3vmin solid black;
 }
 
-button:hover {
-    background-color: red;
-    color: whitesmoke;
-
+#noEnd {
+    text-align: center;
 }
+
+button:hover {
+    background-color:#770030;
+    color: whitesmoke;
+}
+
+    @font-face {
+        font-family: ultra;
+        src: url(path/to/font/file/ultra) format('woff2');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    .warp__placeholder{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: transparent;
+        font-size: .3px;
+    }
+    
+    .warp {
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        width: 1300px;
+        height: 250px;
+        font: bold 57px/1 ultra;
+        color: #eb891b;   
+        
+        
+    }
+    
+    [class*='warp__'] {
+        display: block;
+        position: absolute;
+    }
+    
+    .warp__0 {
+        transform-origin: 50% 35px;
+        transform: translate(27.734499999999997px,140.8059px) rotate(-0.069727rad);
+    }
+    
+    .warp__1 {
+        transform-origin: 50% 35px;
+        transform: translate(84.3711px,134.3057px) rotate(-0.175608rad);
+    }
+    
+    .warp__2 {
+        transform-origin: 50% 35px;
+        transform: translate(135.4994px,119.28809999999999px) rotate(-0.394986rad);
+    }
+    
+    .warp__3 {
+        transform-origin: 50% 35px;
+        transform: translate(185.1171px,89.685px) rotate(-0.818029rad);
+    }
+    
+    .warp__4 {
+        transform-origin: 50% 35px;
+        transform: translate(213.5478px,50.0243px) rotate(-0.869391rad);
+    }
+    
+    .warp__5 {
+        transform-origin: 50% 35px;
+        transform: translate(257.3019px,24.184600000000003px) rotate(-0.17321rad);
+    }
+    
+    .warp__6 {
+        transform-origin: 50% 35px;
+        transform: translate(317.6799px,22.582900000000002px) rotate(0.100886rad);
+    }
+    
+    .warp__7 {
+        transform-origin: 50% 35px;
+        transform: translate(355.9217px,36.928px) rotate(0.648464rad);
+    }
+    
+    .warp__8 {
+        transform-origin: 50% 35px;
+        transform: translate(384.213px,77.2598px) rotate(0.958552rad);
+    }
+    
+    .warp__9 {
+        transform-origin: 50% 35px;
+        transform: translate(424.9293px,110.0061px) rotate(0.55247rad);
+    }
+    
+    .warp__10 {
+        transform-origin: 50% 35px;
+        transform: translate(463.2285px,126.0916px) rotate(0.305876rad);
+    }
+    
+    .warp__11 {
+        transform-origin: 50% 35px;
+        transform: translate(499.5905px,136.113px) rotate(0.154166rad);
+    }
+    
+    .warp__12 {
+        transform-origin: 50% 35px;
+        transform: translate(552.4972px,141.6265px) rotate(0.052416rad);
+    }
+    
+    .warp__13 {
+        display: none;
+    }
+
+ 
+    

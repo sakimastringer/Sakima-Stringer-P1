@@ -121,7 +121,6 @@ function handleClick(evt) {
     }
     // // if it is a match game over //
 
-
 }
 
 function nextTurn(){
@@ -156,23 +155,3 @@ function getRandomItem(str) {
     
     return item
 }
-
-
-
-// // Invoking callback function //
-// function cb() {
-//     // Defining counter direction //
-//     counterState--;
-//     // Invoking subMessage //
-//     // upDateSubMessage()
-//     // Invoking stopTimer
-//     stopTimer()
-//     // Rendering everything above //
-//     render()
-// }
-
-
-
-
-
-
