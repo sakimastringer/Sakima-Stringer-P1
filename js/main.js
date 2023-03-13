@@ -44,10 +44,12 @@ const mainImageEl = document.getElementById('mainImage')
 const displayEl = document.querySelector('#gameClock')
 // selecting SubMessage //
 const subEl = document.querySelector("#submessage")
-// console.log(choiceEls)
+
+
 
 
 // event listeners //
+
 // Attached method using variable name //
 // playAgainButton.addEventListener('click', resetChoices)
 //  console.log()
@@ -100,6 +102,7 @@ function hideChoices() {
 
 }
 
+
 function handleClick(evt) {
     console.log(evt.target.id, main)
     // const currentSquare = evt.target.id
@@ -122,6 +125,7 @@ function handleClick(evt) {
     // // if it is a match game over //
 
 }
+
 
 function nextTurn(){
     

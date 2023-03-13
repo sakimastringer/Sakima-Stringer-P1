@@ -39,8 +39,9 @@ h4 {
 
 h5 {
     font-size: medium;
-    color: #eb891b; 
+    color: #bc4130; 
     margin-bottom: 0px;
+    text-align: center;
 }
 
 #mainCard {
@@ -105,8 +106,8 @@ p {
     font-weight: 550;
     text-align: center; 
 }
-
-button {
+ 
+audio {
     margin: 0;
     font-size: 3vmin;
     padding: 2pt;
@@ -120,9 +121,16 @@ button {
     text-align: center;
 }
 
-button:hover {
+.player {
+    display: flex;
+    justify-content: center; 
+    background-image: linear-gradient(to top, #770030, #9b2132, #bc4130, #d76428, #eb891b, #f1a016, #f5b716, #f6ce1f, #f4da30, #f1e540, #eef04f, #ebfb5f);
+}
+
+audio:hover {
     background-color:#770030;
     color: whitesmoke;
+    
 }
 
     @font-face {
